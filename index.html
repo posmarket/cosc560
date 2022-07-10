@@ -5,29 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNE Cinema</title>
-    <script src="dist/app.js" defer></script>
+    <script type="module" src="app.ts" defer></script>
     <link rel="stylesheet" href="./style.css"></link>
 </head>
 <body>
     <header class="header">UNE Cinema</header>
-    <main class="main">
-        <div class="movies">
-            <div id="1" class="movie selected">
-                <img src="https://cdn.eventcinemas.com.au/cdn/resources/movies/15020/images/largeposter.jpg">
-                <div class="title">Jurassic World Dominion</div>
-            </div>
-            <div id="2" class="movie">
-                <img src="https://cdn.eventcinemas.com.au/cdn/resources/movies/14621/images/largeposter.jpg">
-                <div class="title">Top Gun: Maverick</div>
-            </div>
-            <div id="3" class="movie">
-                <img src="https://cdn.eventcinemas.com.au/cdn/resources/movies/15657/images/largeposter.jpg">
-                <div class="title">Doctor Strange</div>
-            </div>            
-        </div>
-        <div class="theater" id="theater">
-            <div class="screen"></div>
-        </div>
+    <main class="main" id="cinema">
     </main>
 </body>
 </html>
