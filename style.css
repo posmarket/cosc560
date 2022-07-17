@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #4F58DF;
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.boardOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: "100px";
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: brown;
+    background: url('grid.png');
+    background-repeat: repeat;
+}
+
+.grid {
+    position:absolute;
+    z-index: -1;
+    background-image:
+      repeating-linear-gradient(#ccc 0 1px, transparent 1px 100%),
+      repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100%);
+    background-size: 2.3rem 2rem;
+    margin: 0;
+}
+
+.other {
+    background: url('http://i.stack.imgur.com/jGlzr.png') repeat 0 0 scroll;    
+    padding: 10px;
+}
+
+.stoneGrid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.row {
+    display: flex;   
+}
+
+.stone {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border:1px solid transparent;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.stone.taken {
+    background-color: rgba(0, 0, 0, .08);
+    cursor: not-allowed;
+}
+
+.stone.white {
+    background-color: #ffffff;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.stone.black {
+    background-color: #000000;
+}
+
+.stone.available {
+    background-color: transparent;
+}
+
+.stone.available:hover {
+    background-color: #16437E;
+    opacity: 0.5;
+}
